@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css"/>
+    <title>plumpuddingmodel</title>
+</head>
+<body>
+    <h1> JJ Thompson Cathode Ray Tube Experiment </h1>
+
+<svg id = "main" width="600" height="500" xmlns="http://www.w3.org/2000/svg">
+  
+
+ <metadata id="metadata5">image/svg+xml</metadata>
+ <g>
+  
+
+   
+ </g>
+ <g>
+   <text x = "80" y = "90" fill = "black">Negative</text>
+   <text x = "380" y = "90" fill = "black">Positive</text>
+  <g id="layer1">
+   <path fill="none" stroke="#000000" stroke-width="6.06499" d="m164.04167,238.125a54.0506,113.39286 0 0 1 -54.0506,113.39286a54.0506,113.39286 0 0 1 -54.0506,-113.39286a54.0506,113.39286 0 0 1 54.0506,-113.39286a54.0506,113.39286 0 0 1 54.0506,113.39286z" id="path833"/>
+   <path fill="#e6e6e6" stroke="#000000" stroke-width="6.06499" d="m455.08332,230.94344a48.38096,111.50297 0 0 1 -48.38096,111.50296a48.38096,111.50297 0 0 1 -48.38095,-111.50296a48.38096,111.50297 0 0 1 48.38095,-111.50297a48.38096,111.50297 0 0 1 48.38096,111.50297z" id="path835"/>
+   <path fill="#e6e6e6" stroke-width="65.4938" transform="scale(0.2645833194255829) " id="path837" d="m384.90734,1309.9162c-58.47109,-21.463 -114.52516,-112.3084 -140.30761,-227.3928c-15.56027,-69.456 -17.44841,-89.20737 -17.44841,-182.5234c0,-93.31603 1.88814,-113.06737 17.44841,-182.52337c26.00007,-116.05586 82.31138,-206.72966 141.31388,-227.54696c15.32099,-5.40555 44.28036,-5.40555 59.60135,0c58.87285,20.77156 115.37093,111.7461 141.31387,227.54696c15.49191,69.15077 17.404,89.20368 17.404,182.52337c0,69.64131 -1.01603,93.45489 -5.05889,118.5714c-18.30648,113.7302 -49.36423,193.9883 -96.87,250.3274c-13.47305,15.9782 -40.10207,35.284 -56.78898,41.1715c-14.79665,5.2206 -46.18289,5.1408 -60.60762,-0.154l0,-0.0001z"/>
+  </g>
+ </g>
+  <path id="motionPath" fill="none" stroke-miterlimit="10" d="M 0 0 L 290 0"/>
+  <path id="motionPath2" fill="none" stroke-miterlimit="10" d="M 0 0 L 290 0"/>
+  
+   <circle id = "atom2" cx = "100" cy = "250" r = "5" fill = "blue"/>
+  <circle id = "atom" cx = "100" cy = "250" r = "5" fill = "blue"/>
+  
+  
+<animateMotion 
+           xlink:href="#atom"
+           dur="1s"
+           begin="click"
+           fill="remove"
+               repeatCount = "10"
+               id = "first-atom"
+           >
+  <mpath xlink:href="#motionPath" />
+   </animateMotion>
+  
+ 
+  <animateMotion 
+           xlink:href="#atom2"
+           dur="1s"
+           begin= "first-atom.begin + 1s"
+           fill="remove"
+           repeatCount = "10"
+           >
+  <mpath xlink:href="#motionPath2" />
+   </animateMotion>
+  
+  <svg id = "magnets">
+    <rect x = "240" y = "100" height = "30" width = "30" fill = "red"/>
+    <rect x = "240" y = "360" height = "30" width = "30" fill = "red"/>
+    <line x1 = "250" y1 = "50" x2 = "250" y2 = "70" stroke = "black" stroke-width = "2"/>
+    <line x1 = "240" y1 = "60" x2 = "260" y2 = "60" stroke = "black" stroke-width = "2"/>
+    <line x1 = "245" y1 = "400" x2 = "265" y2 = "400" stroke = "black" stroke-width = "2"/>
+  </svg>
+  
+
+</svg>
+
+<div id = "grid-container">
+  <div id = "grid-container1">
+    <input id = "button1" type = "button" onclick = "Myfunction()"> <p>Place magnets </p></input>
+  </div>
+  <div id = "grid-container1">
+    <input id = "button2" type = "button" onclick = "Myfunction2()"> <p>Change path </p></input>
+  </div>
+  
+</div>
+
+
+</body>
+<script src = "java.js"></script</script>
+</html>
